@@ -4,9 +4,10 @@ import Header from './header'
 import Container from './container'
 
 function Promotions(){
+    // PÁGINA DE PROMOÇÕES
     return(
         <View>
-            <Header title = 'Promoções' />
+            <Header title = 'Promoções' />  
             <View style = {{flexDirection: 'row'}}> 
                 <Container title_header = 'Segunda'
                             descrition = 'Filé'
