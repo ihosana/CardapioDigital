@@ -9,24 +9,29 @@ function Pratos(){
             <Header title = 'Pratos' />
             <ScrollView>
                 <Section
-                    title = 'Filé Aparmediano'
+                    title = 'Filé a parmegiana'
                     money = '30,00'
+                    image = {require('../../img/Pratos/parmegiana.jpg')}
                 />
                 <Section 
                     title = "Feijoada"
-                    money = "30,00"
+                    money = "20,00"
+                    image = {require('../../img/Pratos/feijoada.png')}
                 />
                 <Section 
-                    title = "Espaguete ao molho branco"
+                    title = "Lasanha"
                     money = "30,00"
+                    image = {require('../../img/Pratos/lasanha.jpeg')}
                 />
                 <Section 
-                    title = "Frango"
-                    money = "30,00"
+                    title = "Bolo de Carne"
+                    money = "50,00"
+                    image = {require('../../img/Pratos/carne.jpg')}
                 />
                 <Section 
-                    title = "Name"
-                    money = "30,00"
+                    title = "Lagosta"
+                    money = "80,00"
+                    image = {require('../../img/Pratos/lagosta.jpg')}
                 />
                 <Section 
                     title = "Name"

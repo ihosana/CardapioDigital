@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import {RFPercentage} from 'react-native-responsive-fontsize';
+//{require('../../img/Pratos/lasanha.jpeg')}
 
 class Section extends Component{
     render(){
@@ -9,7 +10,7 @@ class Section extends Component{
             <View style = {{alignItems: 'center'}}>
                 <TouchableOpacity style = {style.box_one}>
                     <View style = {style.image}>
-                        <Image source = {require('../../img/Pratos/lasanha.jpeg')} style = {style.image} />
+                        <Image source = {this.props.image}  style = {style.image} />
                     </View>
                     <View style = {style.box_second} >
                         <View style = {style.container_title}>
@@ -30,7 +31,7 @@ export default Section;
 const style = StyleSheet.create({
     box_one : {
         backgroundColor: 'white',
-        width: wp('95%'),
+        width: wp('90%'),
         height: hp('20%'),
         flexDirection: 'row',
         marginTop: '2%',
@@ -48,7 +49,7 @@ const style = StyleSheet.create({
     },
     container_title : {
        /* backgroundColor: '#ff722b', */
-        width: wp('60%'),
+        width: wp('50%'),
         height: hp('7%'),
         elevation: 10
      
@@ -62,10 +63,10 @@ const style = StyleSheet.create({
         marginLeft: 5,
         marginBottom: 3,
         borderRadius: 5,
-        elevation: 10
+        //elevation: 10
     },
     title : {
-        fontSize: RFPercentage(4),
+        fontSize: RFPercentage(3.5),
         textAlign: 'center',
         color: '#240500'
     },

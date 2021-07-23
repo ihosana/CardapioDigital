@@ -6,7 +6,6 @@ function CustomDrawer({...props}){
     return(
         <View>
             <Text>Testando</Text>
-            <DrawerNavigatorItems {...props} />
 
         </View>
     );

@@ -9,16 +9,19 @@ function Sobremesas(){
             <Header title = 'Sobremesas' />
             <ScrollView>
                 <Section
-                    title = 'Lasanha'
-                    money = '30,00'
+                    title = 'Bolo'
+                    money = '9,00'
+                    image = {require('../../img/Sobremesa/bolo.jpg')}
                 />
                 <Section 
-                    title = "Lasanha"
-                    money = "30,00"
+                    title = "Sorvete"
+                    money = "2,00"
+                    image = {require('../../img/Sobremesa/sorvete.jpg')}
                 />
                 <Section 
-                    title = "Name"
-                    money = "30,00"
+                    title = "Pudim"
+                    money = "5,00"
+                    image = {require('../../img/Sobremesa/pudim.jpg')}
                 />
                
                 

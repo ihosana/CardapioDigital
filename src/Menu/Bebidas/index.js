@@ -9,29 +9,26 @@ function Bebidas(){
             <Header title = 'Bebidas' />
             <ScrollView>
                 <Section
-                    title = 'Lasanha'
-                    money = '30,00'
+                    title = 'Água'
+                    money = '3,00'
+                    image = {require('../../img/Bebidas/agua.webp')}
                 />
                 <Section 
-                    title = "Lasanha"
-                    money = "30,00"
+                    title = "Água com gás"
+                    money = "5,00"
+                    image = {require('../../img/Bebidas/gas.webp')}
                 />
                 <Section 
-                    title = "Name"
-                    money = "30,00"
+                    title = "Refri"
+                    money = "8,00"
+                    image = {require('../../img/Bebidas/refri.jpg')}
                 />
                 <Section 
-                    title = "Name"
-                    money = "30,00"
+                    title = "Suco"
+                    money = "6,00"
+                    image = {require('../../img/Bebidas/suco.jpg')}
                 />
-                <Section 
-                    title = "Name"
-                    money = "30,00"
-                />
-                <Section 
-                    title = "Name"
-                    money = "30,00"
-                />
+                <Section />
                 
             </ScrollView>
         </View>

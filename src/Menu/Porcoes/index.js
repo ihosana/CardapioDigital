@@ -9,16 +9,19 @@ function Porcoes(){
             <Header title = 'Porções' />
             <ScrollView>
                 <Section
-                    title = 'Lasanha'
-                    money = '30,00'
+                    title = 'Arroz'
+                    money = '10,00'
+                    image = {require('../../img/Porcoes/arroz.jpg')}
                 />
                 <Section 
-                    title = "Lasanha"
-                    money = "30,00"
+                    title = "Feijão"
+                    money = "15,00"
+                    image = {require('../../img/Porcoes/feijao.webp')}
                 />
                 <Section 
-                    title = "Name"
-                    money = "30,00"
+                    title = "Batata Frita"
+                    money = "18,00"
+                    image = {require('../../img/Porcoes/batata.jpg')}
                 />
                
                 
