@@ -8,7 +8,7 @@ Desenvolvendo aplicativo de cardápio com React Native
 - [x] Incremento dos produtos
 - [ ] Ajustes na página promoção
 - [ ] Estilização de Menu lateral
+- [x] Utilização de pop-us para informação de produto
 
 ## Passos a serem planejados: 
-- [ ] Utilização de pop-us para informação de produto
 - [ ] Sistema de notificação
