@@ -1,38 +1,144 @@
 import React from 'react';
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, StyleSheet} from 'react-native';
 import Header from './header'
 import Container from './container'
+import HeaderDate  from './headerdate';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 function Promotions(){
     // PÁGINA DE PROMOÇÕES
     return(
-        <View>
+        <ScrollView>
             <Header title = 'Promoções' />  
-            <View style = {{flexDirection: 'row'}}> 
-                <Container title_header = 'Segunda'
-                            descrition = 'Filé'
-                            preco = 'R$ 20,00'
-                            desc = '-9%'
-                />
-                <Container title_header = 'Quinta'
-                            descrition = 'Macarrão'
-                            preco = 'R$ 20,00' 
-                            desc = '-10%'
-                            />           
-            </View>
-            <View style = {{flexDirection: 'row'}}>
-                <Container title_header = 'Quarta'
-                            descrition = 'Feijoada'
-                            preco = 'R$ 20,00'
-                            desc = '-40%'
-                />
-                <Container title_header = 'Sexta'
-                            descrition = 'Pizzas'
-                            preco = 'R$ 20,00'
-                            desc = '-25%'
-                />
-            </View>
-        </View>
+            <HeaderDate title = 'Segunda' />
+            <ScrollView horizontal = {true} style = {style.horizontal}>
+                <View style = {{flexDirection: 'row'}}> 
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                   <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                   <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />            
+                </View>
+            </ScrollView>
+            <HeaderDate title = 'Terça' />
+            <ScrollView horizontal = {true} style = {style.horizontal}>
+                <View style = {{flexDirection: 'row'}}>
+                <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />  
+                </View>
+            </ScrollView>
+            <HeaderDate title = 'Quarta' />
+            <ScrollView horizontal = {true} style = {style.horizontal}>
+                <View style = {{flexDirection: 'row'}}>
+                <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />  
+                </View>
+            </ScrollView>
+            <HeaderDate title = 'Quinta' />
+            <ScrollView horizontal = {true} style = {style.horizontal}>
+                <View style = {{flexDirection: 'row'}}>
+                <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />  
+                </View>
+            </ScrollView>
+            <HeaderDate title = 'Sexta' />
+            <ScrollView horizontal = {true} style = {style.horizontal}>
+                <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />
+                    <Container title_header = 'Name'
+                                descrition = 'R$ 00,00'
+                                preco = 'R$ 00,00'
+                                desc = '-0%'
+                    />  
+                
+            </ScrollView>
+        </ScrollView>
     );
 }
 export default Promotions;
+
+const style = StyleSheet.create({
+    horizontal : {
+        backgroundColor:  '#fafafa',
+        height: hp('26%'),
+        elevation: 10
+
+    }
+});

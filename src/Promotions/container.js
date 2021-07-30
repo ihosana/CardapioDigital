@@ -1,12 +1,12 @@
 import { styleSheets } from 'min-document';
 import React, {Component} from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import {RFPercentage} from 'react-native-responsive-fontsize';
 
 class Container extends Component{
     render(){
-        return  <View style = {style.box}>
+        return  <TouchableOpacity style = {style.box}>
                     <View style = {style.header_box}>
                         <Text style = {style.title_header}>{this.props.title_header}</Text>
                     </View>
@@ -17,7 +17,7 @@ class Container extends Component{
                             <Text style = {style.desc}>{this.props.desc}</Text>
                         </View>
                     </View>
-                </View>
+                </TouchableOpacity>
     }
 }
 
@@ -28,19 +28,21 @@ const style = StyleSheet.create({
         width: wp('45%'),
         height: hp('20%'),
         backgroundColor: 'white',
-        elevation: 10,
+        //elevation: 10,
         marginLeft: wp('2%'),
-        marginTop: hp('3%')
+        marginTop: hp('3%'),
+        paddingLeft: wp('2%'),
+        borderRadius: 30
     },
     header_box : {
         width: wp('100%'),
         height: hp('5%'),
         //backgroundColor: 'white',
-        elevation: 10,
+        //elevation: 10,
         paddingLeft: wp('12%')
     },
     title_header : {
-        color: 'red',
+        color: '#360800',
         fontSize: RFPercentage(4),
        // textAlign: 'center'
     },
