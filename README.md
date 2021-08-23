@@ -1,6 +1,6 @@
 # CardapioDigital
 Desenvolvendo aplicativo de cardápio com React Native
-
+---->BLÁ BLÁ BLÁ 
 ## Passos a serem feitos: 
 - [x] Estilização da página inicial
 - [x] Estilização do Menu
